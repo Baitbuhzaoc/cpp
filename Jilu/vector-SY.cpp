@@ -1,7 +1,7 @@
 #include <vector>
 #include <iostream>
 using namespace std;
-
+/*
 一、构造函数
 vector<T> v()
 vector<T> v(n)	                n：初始元素个数
@@ -54,3 +54,4 @@ v.begin()	迭代器	     指向第一个元素
 v.end()	    迭代器	     指向最后一个元素之后
 v.rbegin()	反向迭代器	 指向最后一个元素
 v.rend()	反向迭代器	 指向第一个元素之前
+*/

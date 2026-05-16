@@ -20,7 +20,8 @@ int main()
     for (int i = 0; i < n; ++i)
     {
         string token;
-        cin >> token;
+        cin >> token; // 输入之后在判断是数字还是字符
+        // 虽然在比较的时候char和int可以交互，但输入就没招了
         int x, y;
         if (token.size() == 1 && (token[0] == 'a' || token[0] == 'b' || token[0] == 'c'))
         {
@@ -33,7 +34,8 @@ int main()
             cin >> y;
         }
         int res = ji(x, y, last_op);
-        char op_char = (last_op == 'a') ? '+' : (last_op == 'b') ? '-' : '*';
+        char op_char = (last_op == 'a') ? '+' : (last_op == 'b') ? '-'
+                                                                 : '*';
         string expr = to_string(x) + op_char + to_string(y) + "=" + to_string(res);
         cout << expr << endl;
         cout << expr.size() << endl;

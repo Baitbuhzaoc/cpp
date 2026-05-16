@@ -3,6 +3,7 @@
 #include <vector>
 #include <sstream> // for stringstream
 #include <cctype>  // for tolower
+// 大多数时候，整体对数据处理是比较好的，而不是需要的时候在调用
 using namespace std;
 
 int main()

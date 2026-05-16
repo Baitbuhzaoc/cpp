@@ -1,9 +1,10 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
+// 求最大的一个质因数
 
 bool zhi(int n)
-{
+{ // 这种素数判断开销更小
     if (n == 2)
         return true;
     if (n % 2 == 0)

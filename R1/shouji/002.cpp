@@ -2,12 +2,12 @@
 #include <vector>
 using namespace std;
 
-vector<int> result = { 5, 7, 11};
+vector<int> result = {5, 7, 11};
 int p;
 
-void shc3();
-void shc5();
-void shc7();
+void shc3();    // 3位回文素数
+void shc5();    //...
+void shc7();    //...
 bool su(int p); // 素数判断
 
 int main(int argc, char *argv[])
@@ -71,7 +71,7 @@ void shc5()
 
 void shc7()
 {
-    for (int a = 1; a <= 9; a+=2) // 最高位，用a避免与主函数中的a混淆（作用域不同）
+    for (int a = 1; a <= 9; a += 2) // 最高位，用a避免与主函数中的a混淆（作用域不同）
     {
         for (int b = 0; b <= 9; ++b)
         {

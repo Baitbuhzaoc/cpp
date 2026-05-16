@@ -1,11 +1,11 @@
 #include <iostream>
 #include <vector>
-#include <cstdlib>
+#include <cstdlib> //¾ø¶ÔÖµº¯Êý
 using namespace std;
 
 class stu
 {
-  public:
+public:
     int a;
     int b;
     int c;

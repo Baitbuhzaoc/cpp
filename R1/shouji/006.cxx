@@ -6,9 +6,9 @@ int main(int argc, char *argv[])
 {
     int n;
     cin >> n;
-    vector<int> a(n * n);
+    vector<int> a(n * n); // 一维模拟
     a[n / 2 + 1] = 1;
-    int k = n / 2 + 1;
+    int k = n / 2 + 1; // 标记上一次的位置
     int c = 1;
     for (int i = 2; i <= n * n; ++i)
     {

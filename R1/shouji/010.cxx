@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <algorithm> //¿ìÅÅsort()ÉýÐò
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     int n, m;
     cin >> n >> m;
     vector<int> a;
-    vector<int> b(n-m+1);
+    vector<int> b(n - m + 1);
     for (int i = 0; i < n; ++i)
     {
         int t;
@@ -19,10 +19,10 @@ int main(int argc, char *argv[])
     {
         b[0] += a[i];
     }
-    for (int i = 1; i < n-m; ++i)
+    for (int i = 1; i < n - m; ++i)
     {
         b[i] = b[i - 1] - a[i - 1] + a[i + m - 1];
     }
     sort(b.begin(), b.end());
-    cout<<b[0];
+    cout << b[0];
 }
